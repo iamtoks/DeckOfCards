@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jMn-Hu-X0d">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Card View Controller-->
+        <scene sceneID="QGm-A5-0bR">
+            <objects>
+                <viewController id="jMn-Hu-X0d" customClass="CardViewController" customModule="DeckOfCards" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qXV-XS-cwv">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UrC-Dc-gtI">
+                                <rect key="frame" x="87" y="309" width="240" height="288"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kbc-Pn-rgb">
+                                <rect key="frame" x="114" y="202" width="186" height="65"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <color key="textColor" systemColor="secondarySystemGroupedBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fcl-mt-kMv">
+                                <rect key="frame" x="147" y="715" width="130" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="drawButtonTapped:" destination="jMn-Hu-X0d" eventType="touchUpInside" id="1Gj-DA-AmJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.27478324970000001" green="0.39701490560000002" blue="0.1504898828" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="UrC-Dc-gtI" firstAttribute="top" secondItem="9c7-aq-c02" secondAttribute="top" constant="265" id="G20-AZ-Oth"/>
+                            <constraint firstItem="Kbc-Pn-rgb" firstAttribute="top" secondItem="9c7-aq-c02" secondAttribute="top" constant="158" id="Hwn-Ih-5us"/>
+                            <constraint firstItem="UrC-Dc-gtI" firstAttribute="centerY" secondItem="9c7-aq-c02" secondAttribute="centerY" id="VIL-g7-V0S"/>
+                            <constraint firstItem="Kbc-Pn-rgb" firstAttribute="leading" secondItem="9c7-aq-c02" secondAttribute="leading" constant="114" id="Yai-hT-YbY"/>
+                            <constraint firstItem="Kbc-Pn-rgb" firstAttribute="centerX" secondItem="9c7-aq-c02" secondAttribute="centerX" id="chx-fC-eCr"/>
+                            <constraint firstItem="UrC-Dc-gtI" firstAttribute="centerX" secondItem="9c7-aq-c02" secondAttribute="centerX" id="e0n-Sv-B0z"/>
+                            <constraint firstItem="UrC-Dc-gtI" firstAttribute="top" secondItem="Kbc-Pn-rgb" secondAttribute="bottom" constant="42" id="myF-cv-0AZ"/>
+                            <constraint firstItem="UrC-Dc-gtI" firstAttribute="leading" secondItem="9c7-aq-c02" secondAttribute="leading" constant="87" id="uqb-Bl-Q8l"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="9c7-aq-c02"/>
+                    </view>
+                    <connections>
+                        <outlet property="cardImageView" destination="UrC-Dc-gtI" id="RQD-jr-YaV"/>
+                        <outlet property="cardTextLabel" destination="Kbc-Pn-rgb" id="Pk4-r9-DW4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7lR-yJ-dTp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-155.07246376811597" y="111.83035714285714"/>
+        </scene>
+    </scenes>
+</document>
